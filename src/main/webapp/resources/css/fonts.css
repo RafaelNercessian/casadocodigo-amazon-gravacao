@@ -1,0 +1,16 @@
+@font-face {
+  font-family: 'Museo';
+  font-style: normal;
+  font-weight: normal;
+  src: url('museo-500.eot');
+  src: url('museo-500.eot?#iefix') format('embedded-opentype'),
+       
+}
+
+@font-face {
+  font-family: 'Museo';
+  font-style: normal;
+  font-weight: bold;
+  src: url('museo-700.eot');
+  src: url('museo-700.eot?#iefix') format('embedded-opentype'),
+}
