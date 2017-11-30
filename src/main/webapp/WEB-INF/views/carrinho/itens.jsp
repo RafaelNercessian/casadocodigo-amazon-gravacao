@@ -52,7 +52,7 @@
       <tbody>
         <c:forEach items="${carrinhoCompras.itens }" var="item">
 	        <tr>
-	          <td class="cart-img-col"><img src="<c:url value="/resources/imagens/${item.produto.sumarioPath}"/>" width="143" height="202" /></td>
+	          <td class="cart-img-col"><img src="${item.produto.sumarioPath}" width="143" height="202" /></td>
 	          <td class="item-title">${item.produto.titulo }</td>
 	          <td class="numeric-cell">${item.preco }</td>
 	          <td class="quantity-input-cell">

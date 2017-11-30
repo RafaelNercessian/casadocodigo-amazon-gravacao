@@ -15,7 +15,7 @@
           <a href="${s:mvcUrl('PC#detalhe').arg(0, produto.id).build() }" class="block clearfix">
             <h2 class="product-title">${produto.titulo }</h2>
             <img width="143" height="202" 
-            			src="<c:url value="/resources/imagens/${produto.sumarioPath}"/>" >
+            			src="${produto.sumarioPath}">
             <small class="buy-button">Compre</small>
           </a>
         </li>

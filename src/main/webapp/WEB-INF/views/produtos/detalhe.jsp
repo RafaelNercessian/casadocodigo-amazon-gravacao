@@ -12,7 +12,7 @@
 <article id="${produto.id }" itemscope>
   <header id="product-highlight" class="clearfix">
     <div id="product-overview" class="container">
-      <img itemprop="image" width="280px" height="395px" src="<c:url value="/resources/imagens/${produto.sumarioPath}"/>" class="product-featured-image">
+      <img itemprop="image" width="280px" height="395px" src="${produto.sumarioPath}" class="product-featured-image">
       
       <h1 class="product-title" itemprop="name">
       	${produto.titulo }
