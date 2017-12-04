@@ -40,9 +40,21 @@ public class JPAConfiguration {
 		props.setProperty("hibernate.hbm2ddl.auto", "update");
 		return props;
 	}
+	
+	@Bean
+	@Profile("dev")
+	public DataSource dataSourceDev() {
+		DriverManagerDataSource dataSource = new DriverManagerDataSource();
+		dataSource.setUsername("root");
+		dataSource.setPassword("");
+		dataSource.setUrl("jdbc:mysql://localhost:3306/casadocodigo");
+		dataSource.setDriverClassName("com.mysql.jdbc.Driver");
+		return dataSource;
+	}
 
 	@Bean
-	public DataSource dataSource() {
+	@Profile("prod")
+	public DataSource dataSourceProd() {
 		DriverManagerDataSource dataSource = new DriverManagerDataSource();
 		dataSource.setUsername("casadocodigo");
 		dataSource.setPassword("casadocodigo");
