@@ -20,7 +20,7 @@ public class RedisConfiguration extends AbstractHttpSessionApplicationInitialize
 	public JedisConnectionFactory jedisConnectionFactory() {
 		JedisPoolConfig pool = new JedisPoolConfig();
 		JedisConnectionFactory factory = new JedisConnectionFactory(pool);
-		factory.setHostName("redis-casadocodigo.ksyrdt.0001.use1.cache.amazonaws.com");
+		factory.setHostName("[SEU ENDPOINT]");
 		factory.setPort(6379);
 		return factory;
 	}
